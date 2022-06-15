@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap')
+
+*
+    box-sizing: border-box
+
+html, body
+    min-height: 100%
+
+body
+    font-size: 1rem
+    margin: 0
+    font-family: 'Roboto', sans-serif
+
+.section-wrap
+    padding: 20px 15px
+    margin: 20px 0
+
+.section-one
+    .inner-wrap
+        width: 100%
+        max-width: 500px
+        height: 300px
+        background: #e5e5e5
+        padding: 25px 40px
+        margin: auto
+        .block
+            background: white
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+
+            .circle
+                height: 100px
+                width: 100px
+                background: red
+                border-radius: 50%
+                -moz-border-radius: 50%
+                -ms-border-radius: 50%
+                -o-border-radius: 50%
+                -webkit-border-radius: 50%
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    height: 40px
+                    width: 40px
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    background: white
+                    border-radius: 20px
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 50%
+                    transform: translateX(-50%)
+                    bottom: 0
+                    background: white
+                    height: 31px
+                    width: 43px
+                    clip-path: polygon(100% 0, 0 0, 50% 100%)
+                    -moz-clip-path: polygon(100% 0, 0 0, 50% 100%)
+                    -webkit-clip-path: polygon(100% 0, 0 0, 50% 100%)
+
+.section-two
+    background: #e5e5e5
+    padding: 25px
+    @media screen and (max-width: 440px)
+        padding: 15px 0
+    .inner-wrap
+        background: white
+        .row
+            display: flex
+            flex-wrap: wrap
+            background: white
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                height: calc(100% - 40px)
+                width: calc(100% - 40px)
+                border: 20px solid white
+            .column
+                width: 100%
+                min-height: 320px
+                min-width: 320px
+                padding: 20px
+                border: 1px solid #999999
+                flex: 1 1 25%
+                @media screen and (max-width: 320px)
+                    min-width: 100%
+                .block
+                    background: #89e0cd
+                    height: 100%
+                    width: 100%
+                    &.color-green
+                        background: #89e0cd
+
+.section-three
+    .inner-wrap
+        .block
+            max-width: 550px
+            margin: auto
+            ol
+                margin: 0
+                padding: 0
+                list-style-position: inside
+                li
+                    font-size: 1.1rem
+                    padding: 10px
+                    text-align: center
+                    &:nth-child(odd)
+                        background: red
+                        p
+                            color: white
+                    &:nth-child(4n)
+                        background: green
+                        p
+                            color: white
+                    p
+                        display: inline
+                        padding-left: 15px
+                        margin: 0
+                        color: #2d136f
+.section-four
+    .inner-wrap
+        .block
+            border-bottom: 2px solid black
+            min-height: 10em
+            display: flex
+            align-items: flex-end
+            justify-content: center
+            .ball
+                height: 60px
+                width: 60px
+                border-radius: 50%
+                -moz-border-radius: 50%
+                -ms-border-radius: 50%
+                -o-border-radius: 50%
+                -webkit-border-radius: 50%
+                background: red
+                animation: bounce 1.5s cubic-bezier(0, 0, 0.3, 1) alternate infinite
+                -webkit-animation: bounce 1.5s cubic-bezier(0, 0, 0.3, 1) alternate infinite
+
+@-webkit-keyframes bounce
+    0% 
+        transform: translatey(0)
+    100% 
+        transform: translatey(-7em)
+
+@keyframes bounce
+    0%
+        transform: translatey(0)
+    100%
+        transform: translatey(-7em)
+
+.section-five
+    .inner-wrap
+        .block
+            max-width: 800px
+            margin: auto
+            height: 600px
+            border: 1px solid red
+            position: relative
+            .moving-box
+                height: 60px
+                width: 60px
+                background: green
+                position: absolute
+                left: 50%
+                bottom: 0
+                transform: translateX(-50%)
+                &.animate
+                    animation: move 5s linear infinite
+                    -webkit-animation: move 5s linear infinite
+                &.reverse-animation
+                    animation-direction: reverse
+
+    .buttons
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        max-width: 570px
+        margin: 20px auto auto
+        .btn
+            padding: 8px 15px
+            cursor: pointer
+            width: 100%
+            flex: 1 1 33%
+            max-width: 180px
+@-webkit-keyframes bounce
+    0%
+        left: 50%
+        bottom: 0
+        transform: translate(-50%, 0%)
+    25%
+        left: calc(100% - 60px)
+        bottom: 50%
+        transform: translate(0%, 50%)
+    50%
+        left: 50%
+        bottom: calc(100% - 60px)
+        transform: translate(-50%, 0%)
+    75%
+        left: 0
+        bottom: 50%
+        transform: translate(0%, 50%)
+    100%
+        left: 50%
+        bottom: 0
+        transform: translate(-50%, 0%)
+@keyframes move
+    0%
+        left: 50%
+        bottom: 0
+        transform: translate(-50%, 0%)
+    25%
+        left: calc(100% - 60px)
+        bottom: 50%
+        transform: translate(0%, 50%)
+    50%
+        left: 50%
+        bottom: calc(100% - 60px)
+        transform: translate(-50%, 0%)
+    75%
+        left: 0
+        bottom: 50%
+        transform: translate(0%, 50%)
+    100%
+        left: 50%
+        bottom: 0
+        transform: translate(-50%, 0%)

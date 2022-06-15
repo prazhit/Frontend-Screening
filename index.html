@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Screening</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ======= Problem 1 ======== -->
+
+    <section class="section-wrap section-one">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="block">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Problem 2 ======== -->
+
+    <section class="section-wrap section-two">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="row">
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+                    <div class="column">
+                        <div class="block color-green"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Problem 3 ======== -->
+
+    <section class="section-wrap section-three">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="block">
+                    <ol>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Problem 4 ======== -->
+
+    <section class="section-wrap section-four">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="block">
+                    <div class="ball"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======= Problem 5 ======== -->
+
+    <section class="section-wrap section-five">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="block">
+                    <div class="moving-box"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="start" class="btn">Start/Stop Animation</button>
+                <!-- <button id="rotate_clock" class="btn">Rotate Clockwise</button>
+                <button id="rotate_anticlock" class="btn">Rotate Anti-Clockwise</button> -->
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.getElementById('start').addEventListener('click', function () {
+            document.querySelector('.moving-box')
+                .classList.toggle('animate');
+        });
+        document.getElementById('rotate_clock').addEventListener('click', function () {
+            document.querySelector('.moving-box')
+                .classList.add('reverse-animation');
+        });
+        document.getElementById('rotate_anticlock').addEventListener('click', function () {
+            document.querySelector('.moving-box')
+                .classList.remove('reverse-animation');
+        });
+    </script>
+
+
+</body>
+
+</html>
